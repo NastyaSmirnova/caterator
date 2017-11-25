@@ -31,7 +31,18 @@
       ]
     }
   ],
-  "dataGroups": [],
+  "dataGroups": [
+    {
+      "name": "api-performance",
+      "patterns": [
+        "https:\\/\\/cataas\\.com\\/cat\\/"
+      ],
+      "strategy": "performance",
+      "maxSize": 100,
+      "maxAge": 259200000,
+      "version": 1
+    }
+  ],
   "hashTable": {
     "/caterator/inline.66f55512acdf4f79b62f.bundle.js": "7a41a5f7522d528165a00ed5693da17d196cb43a",
     "/caterator/assets/icon-128x128.png": "45868a9b16de3f1364f87eba8b4971481600e508",
