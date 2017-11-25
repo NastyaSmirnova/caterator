@@ -25,10 +25,8 @@ export class ImageComponent implements OnInit {
     this.generateSrc();
   }
   generateSrc(): void {
-    const timestamp = Date.now();
-    this.src = this.image.api + this.image.message + // '?width=600&size=50&ts=123123';
-      '?size=' + this.image.fontsize +
-      '&ts=' + timestamp;
+    this.src = '';
+    this.src = this.image.api + this.image.message + '?size=' + this.image.fontsize;
   }
 
 }
